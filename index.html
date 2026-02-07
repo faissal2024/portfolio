@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio faissal.web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>faissal legtob | portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="logo faissal web.jpg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -97,7 +97,7 @@
       that meet clients' expectations. With two years of experience, I am
       proficient in HTML, CSS, JavaScript, and frameworks like React.
     </p>
-    <a href="#services" class="btn">Explore My Work</a>
+    <a href="#works-header" class="btn">Explore My Work</a>
   </div>
 </section>
 
@@ -221,23 +221,23 @@
 <!-- 🌐 شريط التنقل السفلي للهاتف -->
 <div class="mobile-nav">
   <a href="#home" class="nav-item active">
-    <img src="home.png" alt="">
+    <img src="icons-dev/home.png" alt="">
     <span>Home</span>
   </a>
   <a href="#services" class="nav-item">
-    <img src="question.png" alt="">
+    <img src="icons-dev/question.png" alt="">
     <span>Services</span>
   </a>
   <a href="#github" class="nav-item">
-    <img src="github(2).png" alt="">
+    <img src="icons-dev/github.png" alt="">
     <span>GitHub</span>
   </a>
   <a href="#works-section" class="nav-item">
-    <img src="suitcase.png" alt="">
+    <img src="icons-dev/suitcase.png" alt="">
     <span>Projects</span>
   </a>
   <a href="contact.html" class="nav-item">
-    <img src="contact-us.png" alt="">
+    <img src="icons-dev/contact-us.png" alt="">
     <span>contact</span>
   </a>
 </div>
@@ -311,7 +311,7 @@
       <div class="wave"></div>
 
       <div class="infotop">
-        <img src="html-5(1).png" alt="HTML">
+        <img src="assets/images/html-5(1).png" alt="HTML">
         <h3>HTML</h3>
         <p class="name">Structure building language</p>
       </div>
@@ -324,7 +324,7 @@
       <div class="wave2"></div>
 
       <div class="infotop">
-        <img src="css-3.png" alt="CSS">
+        <img src="assets/images/css-3.png" alt="CSS">
         <h3>CSS</h3>
         <p class="name">Used to decorate the site</p>
       </div>
@@ -337,7 +337,7 @@
       <div class="wave3"></div>
 
       <div class="infotop">
-        <img src="js.png" alt="JavaScript">
+        <img src="assets/images/js.png" alt="JavaScript">
         <h3>JavaScript</h3>
         <p class="name">To make it responsive</p>
       </div>
@@ -350,7 +350,7 @@
       <div class="wave4"></div>
 
       <div class="infotop">
-        <img src="icons-dev/python.png" alt="Python">
+        <img src="projects/python.png" alt="Python">
         <h3>Python</h3>
         <p class="name">Building software</p>
       </div>
@@ -660,9 +660,9 @@
 
 <section class="works-section" id="works-section" aria-label="My Works">
   
-  <div class="works-header">
+  <div id="works-header" class="works-header">
 
-      <h2 class="heading">My Works</h2>
+      <h2 class="heading">My projects</h2>
 
     <div class="works-actions">
       <!-- اتركه لو أردت زر للتحميل أو عرض الكل -->
@@ -689,39 +689,18 @@
         </p>
 
         <div class="card-actions">
-          <button class="btn" onclick="openSite('https://faissal2024.github.io/faissal-film/')" aria-label="Open Movies website">Visit (Preview)</button>
+          <button class="btn" onclick="openSite('https://faimovies.netlify.app/')" aria-label="Open Movies website">Visit (Preview)</button>
           <button class="btn btn-ghost" disabled aria-disabled="true">Not finished</button>
         </div>
       </div>
       <div class="ribbon" aria-hidden="true">Not ready</div>
     </article>
 
-    <!-- Login Page 1 (Not finished) -->
-    <article class="card" aria-labelledby="title-login1">
-      <div class="card-media">
-        <img src="projects/login1.png" alt="Login Page 1 preview">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h3 id="title-login1">Login Page 1</h3>
-          <div class="tags"><span class="badge">Practice UI</span></div>
-        </div>
-
-        <p class="card-desc">
-          Simple and elegant login UI. Currently under development — authentication flow will be added soon.
-        </p>
-
-        <div class="card-actions">
-          <button class="btn" onclick="openSite('https://faissal2024.github.io/faissal-login/')" aria-label="Open login 1 preview">Preview</button>
-          <button class="btn btn-ghost" disabled aria-disabled="true">Under dev</button>
-        </div>
-      </div>
-    </article>
-
+    
     <!-- Galaxy S23 Ultra (Finished) -->
     <article class="card" aria-labelledby="title-galaxy">
       <div class="card-media">
-        <img src="projects/galaxy.png"Galaxy S23 Ultra site preview">
+        <img src="projects/galaxy.png" alt="Galaxy S23 Ultra site preview">
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -745,6 +724,7 @@
       </div>
     </article>
 
+    
     <!-- Portfolio 2022 -->
     <article class="card" aria-labelledby="title-portfolio">
       <div class="card-media">
@@ -767,6 +747,55 @@
       </div>
     </article>
 
+    <!-- Login UI Project -->
+<article class="card" aria-labelledby="title-login">
+  <div class="card-media">
+    <img src="projects/new login.png" alt="Login UI Website preview">
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <h3 id="title-login">Login UI | 2025</h3>
+      <div class="tags">
+        <span class="badge">HTML • CSS • JavaScript</span>
+      </div>
+    </div>
+
+    <p class="card-desc">
+      A modern and responsive login interface with dark mode support and independent pages for signup and password recovery. <strong>Note:</strong> fully functional design for portfolio showcase.
+    </p>
+
+    <div class="card-actions">
+      <button class="btn" onclick="openSite('https://faissal2024.github.io/faissal_login/')" aria-label="Open Login UI website">Visit (Preview)</button>
+      <button class="btn btn-ghost" disabled aria-disabled="true">Portfolio Ready</button>
+    </div>
+  </div>
+  <div class="ribbon" aria-hidden="true">Ready</div>
+</article>
+
+
+    <!-- Login Page 1 (Not finished) -->
+    <article class="card" aria-labelledby="title-login1">
+      <div class="card-media">
+        <img src="projects/login1.png" alt="Login Page 1 preview">
+      </div>
+      <div class="card-body">
+        <div class="card-title">
+          <h3 id="title-login1">Login Page 2022</h3>
+          <div class="tags"><span class="badge">Practice UI</span></div>
+        </div>
+
+        <p class="card-desc">
+          Simple and elegant login UI. Currently under development — authentication flow will be added soon.
+        </p>
+
+        <div class="card-actions">
+          <button class="btn" onclick="openSite('https://faissal2024.github.io/faissal-login/')" aria-label="Open login 1 preview">Preview</button>
+          <button class="btn btn-ghost" disabled aria-disabled="true">Under dev</button>
+        </div>
+      </div>
+    </article>
+
+
     <!-- Login Page 2 -->
     <article class="card" aria-labelledby="title-login2">
       <div class="card-media">
@@ -774,7 +803,7 @@
       </div>
       <div class="card-body">
         <div class="card-title">
-          <h3 id="title-login2">Login Page 2</h3>
+          <h3 id="title-login2">Login Page 2024</h3>
           <div class="tags"><span class="badge">Auth UI</span></div>
         </div>
 
@@ -886,11 +915,11 @@
       </div>
     </article>
 
-    
-    <!-- Goth Store -->
+<!--     
+     Goth Store 
     <article class="card" aria-labelledby="title-goth">
       <div class="card-media">
-        <img src="screens/goth_store.png" alt="Goth store preview">
+        <img src="projects/goth_store.png" alt="Goth store preview">
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -910,10 +939,10 @@
     </article>
 
 
-    <!-- Pepsi Website -->
+     Pepsi Website 
     <article class="card" aria-labelledby="title-pepsi">
       <div class="card-media">
-        <img src="screens/pepsi.png" alt="Pepsi style site preview">
+        <img src="projects/pepsi.png" alt="Pepsi style site preview">
       </div>
       <div class="card-body">
         <div class="card-title">
@@ -930,7 +959,7 @@
           <button class="btn btn-ghost" onclick="openCode('#')">Source</button>
         </div>
       </div>
-    </article>
+    </article> -->
 
   </div>
 
@@ -979,7 +1008,7 @@
 
         <ul class="list">
 
-            <img src="logo faissal web.jpg" alt="">
+            <img src="assets/images/logo faissal web.jpg" alt="">
           
         </ul>
 
@@ -992,7 +1021,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>
   // فتح روابط في نافذة جديدة مع فحص بسيط
   function openSite(url){

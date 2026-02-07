@@ -2072,18 +2072,6 @@ color: #00eaff;
   filter: drop-shadow(0 0 8px #00eaff) brightness(1.2);
 }
 
-/* دائرة مضيئة تحت العنصر النشط */
-.nav-item.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  width: 6px;
-  height: 6px;
-  background: linear-gradient(45deg, #00eaff, #0077ff);
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00eaff;
-}
-
 /* النص */
 .nav-item span {
   margin-top: 3px;
