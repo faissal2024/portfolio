@@ -42,10 +42,10 @@ window.addEventListener('scroll', () => {
 
 
 const roles = [
-  "Front-end Developer",
-  "UI / UX Designer",
-  "Cyber Security",
-  "Web Developer"
+  "Front-end Developer ",
+  "UI / UX Designer ",
+  "Cyber Security ",
+  "Web Developer "
 ];
 
 let i = 0;
