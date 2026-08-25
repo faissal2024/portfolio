@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById('menu-icon');
 const navbar = document.getElementById('navbar');
 
-toggleBtn.addEventListener('click', function() {
+if (toggleBtn && navbar) toggleBtn.addEventListener('click', function() {
   if (navbar.style.display === 'none' || navbar.style.display === '') {
     navbar.style.display = 'block';
     toggleBtn.textContent = ''; // Change button text
@@ -62,7 +62,7 @@ function type() {
       currentRole = roles[i].substring(0, j--);
     }
 
-    typingElement.textContent = currentRole;
+    if (typingElement) typingElement.textContent = currentRole;
 
     let speed = isDeleting ? 60 : 100;
     if (!isDeleting && j === roles[i].length) {
@@ -76,7 +76,7 @@ function type() {
     setTimeout(type, speed);
   }
 }
-type();
+if (typingElement) type();
 
 
 
@@ -84,6 +84,7 @@ type();
 // Scroll Animation (Simple)
 const contactSection = document.querySelector('.contact-section');
 window.addEventListener('scroll', () => {
+  if (!contactSection) return;
   const sectionPos = contactSection.getBoundingClientRect().top;
   const screenPos = window.innerHeight / 1.2;
   if(sectionPos < screenPos){
@@ -97,5 +98,12 @@ window.addEventListener('scroll', () => {
     item.addEventListener('click', () => {
       navItems.forEach(i => i.classList.remove('active'));
       item.classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('a[href="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      alert('This project link will be available soon.');
     });
   });
