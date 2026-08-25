@@ -94,8 +94,8 @@
     <p class="hero-lead">I craft fast, polished websites that turn ambitious ideas into clear, engaging digital experiences.</p>
     <p class="hero-description">A front-end developer focused on responsive interfaces, thoughtful interactions, and reliable performance with HTML, CSS, JavaScript, and React.</p>
     <div class="hero-actions">
-      <a href="#works-section" class="btn">Chof l-khedma <i class="fa-solid fa-arrow-down"></i></a>
-      <a href="contact.html" class="btn btn-ghost hero-secondary">Twasel m3aya <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#works-section" class="btn">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
+      <a href="contact.html" class="btn btn-ghost hero-secondary">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
@@ -1292,11 +1292,16 @@ With over four years of experience, I manage the entire web development cycle - 
   .skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 700px) {
     .skills-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: 1.2rem; padding: .6rem .4rem 1.8rem; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #ff5d5d #202633; }
-    .skills-grid .e-card { flex: 0 0 185px; min-width: 185px; scroll-snap-align: start; }
+  .skills-grid .e-card { flex: 0 0 185px; min-width: 185px; scroll-snap-align: start; }
     .skills-grid::-webkit-scrollbar { height: 6px; }
     .skills-grid::-webkit-scrollbar-track { background: #202633; border-radius: 10px; }
     .skills-grid::-webkit-scrollbar-thumb { background: #ff5d5d; border-radius: 10px; }
   }
+  .hero-copy, .hero-copy p, .hero-copy h1, .hero-copy h2 { text-align: center; }
+  .hero-copy { margin-inline: auto; }
+  .hero-copy .hero-eyebrow { margin-inline: auto; }
+  .hero-copy p { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
 </style>
 </body>
 
